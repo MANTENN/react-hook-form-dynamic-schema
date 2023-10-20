@@ -45,7 +45,10 @@ export default function Home() {
         <Input {...register("name")} placeholder="name" errors={errors} />
         <Input {...register("name2")} placeholder="name2" errors={errors} />
         {name2 &&
-          <Input {...register("age")} placeholder="age" errors={errors} />
+          <>
+            <Input {...register("age")} placeholder="age" errors={errors} />
+            <Input {...register("name3")} placeholder="name3" errors={errors} />
+          </>
         }
         <button type="submit">Send</button>
       </form>
