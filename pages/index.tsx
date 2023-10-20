@@ -46,7 +46,7 @@ export default function Home() {
         <Input {...register("name2")} placeholder="name2" errors={errors} />
         {name2 &&
           <>
-            <Input {...register("age")} placeholder="age" errors={errors} />
+            <Input {...register("age")} type="number" placeholder="age" errors={errors} />
             <Input {...register("name3")} placeholder="name3" errors={errors} />
           </>
         }
